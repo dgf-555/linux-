@@ -1,0 +1,24 @@
+sudo mkdir cli-practice
+cd cli-practice
+cat > readme.md << EOF
+>EOF
+cat > readme.md << EOF
+>Hi there, this is a readme file.
+>EOF
+cat >> readme.md << EOF 
+>This is the second line of the readme
+>EOF
+mv readme.md readme.txt
+sudo mkdir document
+mv readme.txt document
+cd document
+mv readme.txt introduction.txt
+cp inroduction.txt readme.txt
+cat > readme.txt <<EOF
+>The quick brown fox jumps over a lazy dog
+>EOF
+cp -r document ~/cli-practice/docs
+sudo rm -r document
+sudo mkdir ~/cli-practice/parent/child/docs 
+cd ~/cli-practice/docs
+cp introduction.txt ~/cli-practice/parent/child/docs
